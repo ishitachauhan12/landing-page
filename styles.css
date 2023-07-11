@@ -1,0 +1,222 @@
+body {
+  background-color: #649dd5;
+  width: 100%;
+  overflow: scroll;
+}
+
+.heading {
+  font-family: "Staatliches", cursive;
+  font-size: 45vh;
+}
+
+.navbar {
+  background-color: white;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+.collapse {
+  width: 2px;
+  color: white;
+  font-family: "Patua One", cursive;
+  font-size: large;
+}
+
+.logo {
+  height: 60px;
+}
+.about-us-card {
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: none;
+}
+
+.about-us {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.about-us-content {
+  width: 70%;
+}
+.sub-heading {
+  font-family: "Staatliches", cursive;
+  font-size: 15vh;
+  text-align: center;
+}
+.about-us-shoe {
+  height: 50vh;
+  width: 50vw;
+}
+
+.pricing-container {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  margin: 40px;
+  height: auto;
+}
+
+.faqs-container {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqs-data {
+  width: 70%;
+}
+
+.footer-container {
+  height: 10vh;
+  background-color: white;
+  opacity: 0.6;
+}
+
+.footer-data {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0.5%;
+}
+
+.contact-data {
+  display: flex;
+  justify-content: center;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
+  margin: 1%;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: "\02795";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+@media (max-width: 1750px) {
+  .heading {
+    font-size: 35vh;
+  }
+
+  .sub-heading {
+    font-size: 10vh;
+  }
+}
+
+@media (max-width: 1450px) {
+  .heading {
+    font-size: 25vh;
+  }
+
+  .sub-heading {
+    font-size: 10vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .gif,
+  .about-us-shoe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-us-card {
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accordion {
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .panel {
+    display: none;
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+
+  .panel.show {
+    display: block;
+  }
+
+  .about-us-shoe {
+    display: none;
+  }
+
+  .about-us {
+    justify-content: center;
+  }
+  .about-us-content {
+    width: 70%;
+  }
+
+  .heading-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .heading {
+    font-size: 13vh;
+  }
+}
